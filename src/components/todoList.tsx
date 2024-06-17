@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo } from "react";
+import { useCallback, useMemo } from "react";
 
 import { TodoItem } from "./todoItem";
 import { TodoModel } from "./types";
@@ -29,8 +29,9 @@ export const TodoList = () => {
 
   return (
     <>
+      <h2 className={"header-center"}>TODO LIST</h2>
       <button onClick={ handleAddTodo }>Add Todo</button>
-      <div>
+      <div className={"todo-list"}>
         { sortedTodos &&
           sortedTodos.length > 0 &&
           sortedTodos.map((todo) => <TodoItem key={ todo.id } item={ todo }/>) }

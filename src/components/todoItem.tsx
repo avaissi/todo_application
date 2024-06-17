@@ -93,7 +93,7 @@ export const TodoItem = ({item}: TodoProps) => {
             onKeyDown={ handleKeyDown }
           />
         ) : (
-          <span className={itemClasses}>{ text }</span>
+          <p className={itemClasses}>{ text }</p>
         ) }
       </div>
       <button onClick={ handleDelete }>X</button>
