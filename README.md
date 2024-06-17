@@ -16,3 +16,12 @@ and pydantic for typing object models. Server is running with uvicorn.
 - Start frontend from root `/`
   - Install with npm: `npm install`
   - Run with npm: `npm run dev`
+  - To add new todos: Press Add Todo-button
+  - To mark an item complete click the checkbox
+  - To unmark an item click the filled checkbox
+  - To delete a todo item click the X-button
+  - To edit a todo item double click the item's content text and press enter or click aside the text field
+
+### Application screenshot
+
+![todo_application_screenshot](https://github.com/avaissi/todo_application/assets/2530247/c4298dc4-1318-4892-9785-f4013cc5a101)
