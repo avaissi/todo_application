@@ -16,6 +16,10 @@
   text-align: center;
 }
 
+.no-items-header {
+  margin-left: 0.5em;
+}
+
 .todo-list {
   margin-top: 1rem;
   display: flex;

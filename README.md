@@ -9,11 +9,10 @@ and pydantic for typing object models. Server is running with uvicorn.
 
 
 ## To run the application
-- Start backend:
-  - Install
-  - Run from `backend/`: `python main.py`
-- Run from root: `npm install` and `npm run dev`
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Start backend from `backend/`:
+  - Install either with poetry: `poetry install` or using pip: `pip install -r requirements.txt`
+  - Run either with poetry `poetry run python main.py` or `python main.py`
+  - Backend creates and uses a JSON file as database located in `~/json_db/todo.json` or with Windows `C:Users\[user]\json_db\todo.json`
+- Start frontend from root `/`
+  - Install with npm: `npm install`
+  - Run with npm: `npm run dev`

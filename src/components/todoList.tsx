@@ -31,6 +31,7 @@ export const TodoList = () => {
     <>
       <h2 className={"header-center"}>TODO LIST</h2>
       <button onClick={ handleAddTodo }>Add Todo</button>
+      {sortedTodos && sortedTodos.length === 0 && <h4 className={"no-items-header"}>No Todo items</h4>}
       <div className={"todo-list"}>
         { sortedTodos &&
           sortedTodos.length > 0 &&
